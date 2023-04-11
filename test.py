@@ -11,6 +11,7 @@ except:
     print("Error loading model. Please make sure the file 'stock_prediction_model.h5' exists.")
     exit()
 
+print(model.input_shape)
 # Step 1: Load the new data
 try:
     new_data = pd.read_csv('test_data.csv')
@@ -20,6 +21,8 @@ except:
 
 # Step 2: Modify the new_data variable to only contain the Close column
 new_data = new_data[['Open', 'High', 'Low', 'Close', 'Volume', 'Adj Close']].values
+#new_data = new_data['Close'].values
+#print(new_data)
 
 # Step 3: Load the original data and extract the last 30 rows for the date_close variable
 try:
@@ -43,7 +46,6 @@ X = []
 for i in range(lookback, len(new_data)):
     X.append(new_data[i-lookback:i])
 X = np.array(X)
-print (X)
 
 
 # Step 6: Use your trained model to make predictions
