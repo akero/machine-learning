@@ -5,7 +5,7 @@ from keras.layers import LSTM, Dense
 from keras.optimizers import Adam
 from keras.layers import Dropout
 
-#test11111
+#test
 df = pd.read_csv('Apple.csv')
 
 # Select relevant columns
