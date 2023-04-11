@@ -43,6 +43,7 @@ X = []
 for i in range(lookback, len(new_data)):
     X.append(new_data[i-lookback:i])
 X = np.array(X)
+print (X)
 
 
 # Step 6: Use your trained model to make predictions
