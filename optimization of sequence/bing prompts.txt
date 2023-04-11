@@ -1,0 +1,5 @@
+So i have the output graphs of 4 models converted to json. I will paste them below. The model 7 is the best performing. 7th model has 4 layers, 350 lstm, sequence length 60. 11 has 4 layers, 350 lstm, sequence length 120. 12 has 4 layers, 350 lstm, sequence length 90. 13 has 4 layers, 350 lstm, sequence length 30. Can you give me feedback on them? Sent message. So i have the output graphs of 4 models converted to json. I will paste them below. The model 7 is the best performing. 7th model has 4 layers, 350 lstm, sequence length 60. 11 has 4 layers, 350 lstm, sequence length 120. 12 has 4 layers, 350 lstm, sequence length 90. 13 has 4 layers, 350 lstm, sequence length 30. Can you give me feedback on them?
+
+Ok here is the first graph what do you think. Its for model number 7. These graphs are btw output of stock prediction ai models where the "actual" graph is the real price value and "predicted" graph is what the model predicted.
+
+Can i post the graph for some other models?

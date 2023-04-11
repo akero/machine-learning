@@ -1,0 +1,1 @@
+decreasing sequence length moves graph right on the x axis towards more correct area

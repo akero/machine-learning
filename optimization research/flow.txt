@@ -1,0 +1,4 @@
+sequence length seems to move x axis forward towards more correct area.
+
+Training 20 and 25 sequence models.
+After that have to find why 7 is up on y axis

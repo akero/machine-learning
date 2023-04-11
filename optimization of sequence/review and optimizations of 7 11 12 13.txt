@@ -1,0 +1,20 @@
+Lower sequence moves it forward on x axis towards more correct outcome. 
+But 7 is for some reason above on y axis and more detailed.
+
+
+
+Based on the plot you provided, there are a few patterns that can be observed:
+
+The predicted values seem to follow the general trend of the actual values, indicating that the model has captured the overall pattern of the stock's price movement.
+
+However, the predicted values tend to lag behind the actual values in terms of magnitude, especially during large price fluctuations. This suggests that the model may need to be adjusted to better capture the magnitude of the price movements.
+
+The model seems to perform better during periods of relative stability, where the price movements are smaller and less volatile. During these periods, the predicted values more closely match the actual values.
+
+Conversely, the model appears to struggle during periods of high volatility, such as around the middle of the plot. During these periods, the predicted values diverge more from the actual values, indicating that the model may need to be adjusted to better handle extreme market conditions.
+
+Based on these observations, it may be worth considering adjusting the hyperparameters of the model to better handle large fluctuations and high volatility. This could involve tweaking the regularization parameters, adjusting the number of hidden layers or neurons, or experimenting with different activation functions. Additionally, it may be worth exploring different types of models altogether, such as recurrent neural networks or convolutional neural networks, to see if they can better capture the complexities of the stock market.
+
+Thank you for clarifying the sequence length of model 11. Since model 11 has a longer sequence length than model 7 (120 vs 60), it takes into account more historical data when making predictions. This could potentially improve the performance of the model, but it could also make the model more computationally expensive to train.
+
+You could try experimenting with different sequence lengths to see if that improves the performance of your models. You could also try other approaches I mentioned earlier, such as experimenting with the number of layers and LSTM units, trying different data preprocessing techniques, and using feature engineering to extract more relevant information from your input data.
