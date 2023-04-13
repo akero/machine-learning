@@ -11,7 +11,7 @@ except:
     print("Error loading model. Please make sure the file 'stock_prediction_model.h5' exists.")
     exit()
 
-# Load the new data
+# Load the new data that model will make predictions on
 try:
     new_data = pd.read_csv('test_data.csv')
 except:
@@ -51,7 +51,7 @@ predictions = close_scaler.inverse_transform(predictions)
 
 # Visualize the predictions and the last 30 days of the actual data
 test_set = pd.read_csv('test_data.csv')
-y_test = close_scaler.inverse_transform(test_set['Close'].values.reshape(-1, 1))
+y_test = close_scaler.inverse_transform(date_close['Close'].values.reshape(-1, 1))
 y_pred = close_scaler.inverse_transform(predictions)
 
 # Plot the true stock prices
