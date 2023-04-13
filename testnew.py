@@ -51,10 +51,12 @@ X = np.array(X)
 # Step 6: Use your trained model to make predictions with 16 day limit
 predictions = model.predict(X)[:16]
 
-print (predictions)
+
 
 # Step 7: Transform the predicted values back to their original scale
 predictions = close_scaler.inverse_transform(predictions)
+
+print (predictions)
 
 print(predictions.min(), predictions.max())
 
