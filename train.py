@@ -56,6 +56,9 @@ learning_rate = 0.0001
 
 # Create an instance of the Adam optimizer with the desired learning rate
 adam = Adam(lr=learning_rate)
+
+#TODO: replace 'adam' with adam to use the new learning rate to train the model
+
 model.compile(loss='mean_squared_error', optimizer='adam')
 model.fit(X_train, y_train, epochs=10, batch_size=32)
 
