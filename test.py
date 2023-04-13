@@ -62,14 +62,14 @@ print(predictions.min(), predictions.max())
 # and have made predictions on the test set using your model
 test_set = pd.read_csv('test_data.csv')
 
-y_test = close_scaler.inverse_transform(test_set['Close'].values.reshape(-1, 1))
+y_test = close_scaler.inverse_transform(data['Close'].values.reshape(-1, 1))
 y_pred = close_scaler.inverse_transform(predictions)
 
-# Plot the true stock prices
-plt.plot(y_test, color='red', label='True Price')
+# Plot the true prices
+plt.plot(y_test, color='red', label='True')
 
-# Plot the predicted stock prices
-plt.plot(y_pred, color='blue', label='Predicted Price')
+# Plot the predicted prices
+plt.plot(y_pred, color='blue', label='Predicted')
 
 # Add labels and title
 plt.title('Prediction')
